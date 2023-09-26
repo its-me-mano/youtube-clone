@@ -1,0 +1,51 @@
+/* VideoItem.css */
+.video-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    overflow: hidden; /* Prevents overflowing content */
+  }
+  
+  .video-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .video-thumbnail {
+    flex: 0 0 168px; /* Limit thumbnail width */
+    margin-right: 10px;
+    overflow: hidden; /* Prevents overflowing thumbnails */
+  }
+  
+  .video-thumbnail img {
+    max-width: 100%; /* Ensure the thumbnail doesn't exceed its container */
+    height: auto;
+  }
+  
+  .video-content {
+    flex: 1;
+  }
+  
+  .video-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+    /* Allow full text on hover */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .video-title:hover {
+    white-space: normal; /* Allow full text on hover */
+    overflow: visible; /* Allow full text on hover */
+    text-overflow: inherit; /* Allow full text on hover */
+  }
+  
+  .video-channel {
+    font-size: 14px;
+    color: #555;
+  }
+  
